@@ -1,22 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Book } from '../../models/book';
 import { ResponseModel } from '../../models/responseModel';
-
-
+import { Category } from '../../models/Category';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BookServiceService {
+export class CategoryService {
 
   constructor(private httpClient:HttpClient) { }
 
-  getAll():Observable<ResponseModel<Book>>{
-      return this.httpClient.get<ResponseModel<Book>>(
-        'http://localhost:60805/api/Books?PageIndex=0&PageSize=2'
+  getAll():Observable<ResponseModel<Category>>{
+      return this.httpClient.get<ResponseModel<Category>>(
+        'http://localhost:60805/api/Categories?PageIndex=0&PageSize=2'
       );
   }
-
 }
