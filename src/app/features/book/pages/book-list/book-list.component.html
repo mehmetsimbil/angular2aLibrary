@@ -1,1 +1,10 @@
-<p>book-list works!</p>
+<div class="container mt-5">
+    <ul *ngIf="bookList.length> 0">
+      <li *ngFor="let item of bookList">
+        {{item.isbn}}
+        {{item.name}}
+        {{item.pages}}
+      </li>
+    </ul>
+    <p *ngIf="bookList.length <= 0">Yükleniyor...</p>
+  </div>
