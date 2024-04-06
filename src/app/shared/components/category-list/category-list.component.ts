@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Category } from '../../../models/Category';
 import { CategoryService } from '../../services/category.service';
@@ -20,6 +20,8 @@ export class CategoryListComponent implements OnInit {
     this.getCategories();
   }
 
+
+  
   getCategories(){
     this.categoryService.getAll().subscribe({
       next:(response:ResponseModel<Category>)=>{

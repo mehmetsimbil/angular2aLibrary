@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { Book } from "../../../../models/book";
-import { BookService } from "../../services/book.service";
+import { BookService } from "../../../services/book.service";
 import { ResponseModel } from "../../../../models/responseModel";
 
 
