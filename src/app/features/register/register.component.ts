@@ -20,7 +20,7 @@ export class RegisterComponent implements OnInit{
     registerForm!:FormGroup;
    
 
-     ngOnInit(): void {
+    ngOnInit(): void {
       this.createRegisterForm();
     }
 
@@ -36,5 +36,4 @@ export class RegisterComponent implements OnInit{
         console.log("Başarıyla eklendi.");
        });
     }
-
 }

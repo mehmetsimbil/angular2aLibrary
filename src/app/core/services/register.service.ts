@@ -13,10 +13,8 @@ export class RegisterService {
   apiUrl: string = "http://localhost:60805/api/Auth/Register";
 
   Register(registerModel:Register):Observable<any>{
-    const token = localStorage.getItem('Token'); 
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.httpClient.post<any>(this.apiUrl,registerModel,{headers:headers});
+  
+ 
+    return this.httpClient.post<any>(this.apiUrl,registerModel);
   }
 }
