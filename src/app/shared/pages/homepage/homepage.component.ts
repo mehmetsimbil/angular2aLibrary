@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NavbarComponent } from "../../components/navbar/navbar.component";
-import { CategoryListComponent } from "../../components/category-list/category-list.component";
-import { BookListComponent } from '../../../features/book/pages/book-list/book-list.component';
+import { CategoryListComponent } from "../../../components/category-list/category-list.component";
+import { BookListComponent } from '../book-list/book-list.component';
 
 
 
@@ -15,4 +15,6 @@ import { BookListComponent } from '../../../features/book/pages/book-list/book-l
     imports: [CommonModule, FormsModule, NavbarComponent, CategoryListComponent, BookListComponent]
 })
 export class HomepageComponent {
+    title = 'library';
+    image='assets/images/library_image.jpg';
 }

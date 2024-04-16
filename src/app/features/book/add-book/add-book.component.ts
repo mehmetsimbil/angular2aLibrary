@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { BookService } from '../../services/book.service';
+import { BookService } from '../../../shared/services/book.service';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-add-book',
